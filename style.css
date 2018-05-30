@@ -15,7 +15,7 @@ body
 {
 	opacity: 0.85;
 	border-bottom: 1px gray solid;
-	background-color: black;
+	background-color: #000025;
 	width: 100%;
 	font-size: 18px;
 	font-weight: 900;
@@ -53,8 +53,8 @@ ol>li>ul
 	list-style-type: none;
 	padding: 15px 0;
 	display:none;
-	background-color: black;
-	opacity: 0.8;
+	background-color: #000023;
+	opacity: 0.85;
 	position: absolute;
 	z-index:100;
 	width: 210px;
@@ -75,7 +75,7 @@ ol>li>a:hover
 
 ol>li>ul>li
 {
-	padding: 10px;
+	padding: 13px;
 }
 
 
@@ -189,13 +189,13 @@ ol>li>ul>li>a:hover
 
 #container0
 {
-	background-color: #050510;
+	background-color: whitesmoke;
 	opacity: 0.9;
 	background-attachment: fixed;
 	padding-top: 100px;
 	margin-left:auto;
 	margin-right:auto;
-	height:600px;
+	height:540px;
 	text-align:center;
 
 
@@ -204,7 +204,6 @@ ol>li>ul>li>a:hover
 #container1
 {
 	border-top: 1px gray solid;
-
 	background-image: url(img/uslugi-it.jpg);
 	/*background-image: url(img/basketball.png);
 	border-bottom: 1px gray solid;*/
@@ -212,10 +211,10 @@ ol>li>ul>li>a:hover
 	background-attachment: fixed;
 	text-align:center;
 	font-size: 80px;
-	padding-top:150px;
+	padding-top:70px;
 	margin-left:auto;
 	margin-right:auto;
-	height:300px;
+	height:170px;
 	font-family: 'Courgette';
 	text-shadow:
 			1px 1px 0 black,
@@ -225,10 +224,10 @@ ol>li>ul>li>a:hover
 }
 #container1-2
 {
-	padding-top: 200px;
+	padding-top: 20px;
 	border-top: solid black 1px;
 	background-color: whitesmoke;
-	height: 650px;
+	height: 450px;
 }
 #container2
 {
@@ -238,10 +237,10 @@ ol>li>ul>li>a:hover
 	background-color: #10203a;
 	text-align:center;
 	font-size: 80px;
-	padding-top:150px;
+	padding-top:80px;
 	margin-left:auto;
 	margin-right:auto;
-	height:300px;
+	height:180px;
 	font-family: 'Courgette';
 	text-shadow:
 			1px 1px 0 black,
@@ -254,9 +253,9 @@ ol>li>ul>li>a:hover
 #container2-2
 {
 	border-top: solid black 1px;
-	padding-top: 200px;
+	padding-top: 100px;
 	background-color: whitesmoke;
-	height: 650px;
+	height: 450px;
 }
 #container3
 {
@@ -282,10 +281,10 @@ ol>li>ul>li>a:hover
 	background-color: #10203a;
 	text-align:center;
 	font-size: 64px;
-	padding-top:60px;
+	padding-top:50px;
 	margin-left:auto;
 	margin-right:auto;
-	height:600px;
+	height:590px;
 	font-family: 'Courgette';
 	text-shadow:
 			1px 1px 0 black,
@@ -295,28 +294,63 @@ ol>li>ul>li>a:hover
 
 }
 
-img
+#img0
 {
-	border: solid blue 1px;
-	margin:10px;
+    float: left;
+	border: solid #000030 1px;
+	margin:50px;
 }
 
 .content
 {
 	width: 900px;
-	min-height: 300px;
-	border: 2px darkblue solid;
-	background-color: #9aa1ad;
+	min-height: 250px;
+	border: 1px whitesmoke solid;
+	background-color: whitesmoke;
 	color: black;
 	text-align: justify;
-	padding: 25px 25px;
+	padding: 15px 25px;
+    padding-top: 0;
+    padding-bottom: 30px;
 	margin-left: auto;
-
 	margin-right: auto;
 	font-size: 24px;
-
 }
 span
 {
 	font-weight: bold;
+}
+
+.frontend
+{
+	height: 150px;
+	width: 150px;
+	float:left;
+	margin: 37px;
+    padding: 0;
+    transition: transform .5s;
+    background-repeat: no-repeat;
+}
+
+#f1
+{
+    background-image: url("img/frontend/html.png");
+
+}
+#f2
+{
+    background-image: url("img/frontend/css.png");
+}
+#f3
+{
+    background-image: url("img/frontend/js.png");
+}
+#f4
+{
+    background-image: url("img/frontend/bootstrap.png");
+}
+
+.frontend:hover
+{
+    transform: scale(1.2);
 }

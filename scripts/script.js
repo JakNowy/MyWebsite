@@ -1,4 +1,3 @@
-
 function listOn() {
     $('ul',this).slideDown(300)
 };
@@ -10,13 +9,14 @@ function listOff() {
 $('ol>li').hover(listOn,listOff);
 
 
+var scrollTime = 300;
 
 $('a[href="#container1"]').on('click', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
-    }, 500, 'linear');
+    }, scrollTime, 'linear');
 });
 
 $('a[href="#container2"]').on('click', function (e) {
@@ -24,21 +24,21 @@ $('a[href="#container2"]').on('click', function (e) {
 
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
-    }, 500, 'linear');
+    }, scrollTime, 'linear');
 });
 $('a[href="#container3"]').on('click', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
-    }, 500, 'linear');
+    }, scrollTime, 'linear');
 });
 $('a[href="#container4"]').on('click', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
-    }, 500, 'linear');
+    }, scrollTime, 'linear');
 });
 
 $('div[id="back"]').on('click', function (e) {
@@ -46,7 +46,7 @@ $('div[id="back"]').on('click', function (e) {
 
     $('html, body').animate({
         scrollTop: 0
-    }, 500, 'linear');
+    }, scrollTime, 'linear');
 });
 
 $('#main').on('click', function (e) {
@@ -54,7 +54,7 @@ $('#main').on('click', function (e) {
 
     $('html, body').animate({
         scrollTop: 0
-    }, 500, 'linear');
+    }, scrollTime, 'linear');
 
 });
 
