@@ -9,7 +9,7 @@ function listOff() {
 $('ol>li').hover(listOn,listOff);
 
 
-var scrollTime = 300;
+var scrollTime = 200;
 
 $('a[href="#container1"]').on('click', function (e) {
     e.preventDefault();
@@ -57,12 +57,3 @@ $('#main').on('click', function (e) {
     }, scrollTime, 'linear');
 
 });
-
-var nr = 0;
-function geoImage() {
-    alert('hi');
-    if (nr < 1) {nr++}
-    else{nr = 0};
-    $('#gik').setAttribute('src','gik'+nr);
-    setTimeout(geoImage(),300)
-}
