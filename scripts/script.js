@@ -41,7 +41,7 @@ $('a[href="#container4"]').on('click', function (e) {
     }, scrollTime, 'linear');
 });
 
-$('div[id="back"]').on('click', function (e) {
+$('div[class="return"]').on('click', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
