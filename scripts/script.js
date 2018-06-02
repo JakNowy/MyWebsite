@@ -58,6 +58,6 @@ $('#main').on('click', function (e) {
 
 });
 
-$('a .burger-nav').on('click', function () {
-    $('#nav').toggleClass()
+$('.burger-nav').on('click', function () {
+    $('ol>li').toggleClass('shown')
 })

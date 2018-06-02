@@ -20,7 +20,7 @@ body
 	padding: 0;
 	position: fixed;
 	z-index:100;
-	padding-left: 6%;
+	padding-left: 5%;
 }
 
 ol
@@ -253,6 +253,10 @@ span
 		padding: 3px 3%;
 		letter-spacing: 0;
 	}
+	#nav
+	{
+		padding-left: 4%;
+	}
 
 }
 @media screen and (max-width: 1024px)
@@ -337,7 +341,12 @@ span
 		clear: both;
 		text-align: left;
 		padding-bottom: 5px;
-		border-bottom: 1px black dashed;
+		border-bottom: 1px black solid;
+		display: none;
+	}
+	ol>li.shown
+	{
+		display: block;
 	}
 	ol
 	{
@@ -345,8 +354,7 @@ span
 	}
 	#nav
 	{
-		height: 35px;
-		position:static;
+		position: relative;
 	}
 	#container0
 	{
