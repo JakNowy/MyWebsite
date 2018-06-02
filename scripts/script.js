@@ -57,3 +57,7 @@ $('#main').on('click', function (e) {
     }, scrollTime, 'linear');
 
 });
+
+$('a .burger-nav').on('click', function () {
+    $('#nav').toggleClass()
+})

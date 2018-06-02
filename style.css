@@ -15,12 +15,12 @@ body
 	border-bottom: 1px gray solid;
 	background-color: #000c39;
 	width: 100%;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 900;
 	padding: 0;
 	position: fixed;
 	z-index:100;
-	padding-left: 5%;
+	padding-left: 6%;
 }
 
 ol
@@ -37,7 +37,7 @@ ol>li
 	letter-spacing: 1px;
 	text-align:center;
 	min-width:10%;
-	padding: 1% 4%;
+	padding: 3px 4%;
 }
 
 ol>li>ul
@@ -91,6 +91,17 @@ ol>li>ul>li>a:hover
 	color:#5a90e8;
 }
 
+.burger-nav
+{
+	display: block;
+	height: 35px;
+	width: 35px;
+	background-image: url("img/burger-nav.png");
+	background-repeat: no-repeat;
+	float:right;
+	position: relative;
+	top: 3px;
+}
 
 span
 {
@@ -183,7 +194,7 @@ span
 
 .content
 {
-	width: 70%;
+	width: 65%;
 	min-height: 300px;
 	background-color: whitesmoke;
 	color: black;
@@ -221,7 +232,7 @@ span
 	cursor:default;
 }
 
-#contact_me
+.contact_me
 {
 	font-weight: bold;
 	text-shadow: none;
@@ -234,18 +245,30 @@ span
 
 /* MEDIA QUERIES */
 
-
-@media screen and (max-width: 982px)
+@media screen and (max-width: 1080px)
 {
-	#nav
-	{
-		margin: 0;
-		padding-left: 0;
-	}
 
 	ol>li
 	{
-		padding: 1% 3%;
+		padding: 3px 3%;
+		letter-spacing: 0;
+	}
+
+}
+@media screen and (max-width: 1024px)
+{
+	#nav
+	{
+		padding-left: 2%;
+	}
+}
+
+@media screen and (max-width: 982px)
+{
+
+	ol>li
+	{
+		padding: 2px 3%;
 		letter-spacing: 0;
 	}
 }
@@ -254,7 +277,7 @@ span
 {
 	ol>li
 	{
-		padding: 1% 2%;
+		padding: 2px 2%;
 	}
 	#img0
 	{
@@ -282,6 +305,7 @@ span
 	#nav
 	{
 		font-size: 18px;
+		padding-left: 0;
 	}
 }
 
@@ -299,16 +323,55 @@ span
 	}
 	.container-img
 	{
-		font-size: 60px;
+		font-size: 45px;
 	}
 	.frontend
 	{
 		height: 68%;
 		width: 68%;
-		margin: 16%;
+		margin: 20px 16%;
+	}
+	ol>li
+	{
+		float: none;
+		clear: both;
+		text-align: left;
+		padding-bottom: 5px;
+		border-bottom: 1px black dashed;
+	}
+	ol
+	{
+		padding-left: 0;
+	}
+	#nav
+	{
+		height: 35px;
+		position:static;
+	}
+	#container0
+	{
+		padding-top: 0;
+	}
+	.contact_me
+	{
+		font-size: 20px;
 	}
 	/*
 					POPRAWIĆ NAVBARA !
 	*/
 
+}
+@media screen and (max-width: 320px)
+{
+	.container-img
+	{
+		font-size: 45px;
+	}
+	.content{
+		font-size: 20px;
+	}
+	.contact_me
+	{
+		font-size: 18px;
+	}
 }
