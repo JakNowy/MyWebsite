@@ -95,12 +95,13 @@ ol>li>ul>li>a:hover
 {
 	display: block;
 	height: 35px;
-	width: 35px;
+	width: 50px;
 	background-image: url("img/burger-nav.png");
 	background-repeat: no-repeat;
 	float:right;
 	position: relative;
 	top: 3px;
+	right: 1px;
 }
 
 span
@@ -251,7 +252,7 @@ span
 	background-repeat: no-repeat;
 	position: fixed;
 	bottom: 10px;
-	right: 15px;
+	right: 10px;
 	opacity: 0.7;
 }
 .return:hover
@@ -324,7 +325,6 @@ span
 		margin: 8%;
 	}
 
-
 	#nav
 	{
 		font-size: 18px;
@@ -386,13 +386,13 @@ span
 	}
 	.return
 	{
-		bottom: 15px;
+		bottom: 0;
 		right: -5px;
+		opacity: 1;
 		transform: scale(0.5, 0.5);
 	}
 	.return:hover
 	{
-		opacity: 1;
 		transform: scale(0.5);
 	}
 
