@@ -104,6 +104,21 @@ ol>li>ul>li>a:hover
 	right: 1px;
 }
 
+p
+{
+	margin-top:0
+}
+a
+{
+	color: #5a90e8;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #000c39;
+	text-decoration: underline;
+}
+
 span
 {
 	font-weight: bold;
@@ -238,9 +253,9 @@ span
 	font-weight: bold;
 	text-shadow: none;
 	text-align: center;
-	padding: 5%;
-	padding-top: 15%;
-	font-size: 28px;
+	padding: 0 5%;
+	padding-top: 8%;
+	font-size: 22px;
 	font-family: "Lucida Grande";
 }
 
