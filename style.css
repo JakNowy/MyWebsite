@@ -14,14 +14,13 @@ body
 {
 	opacity: 0.9;
 	border-bottom: 1px gray solid;
-	background-color: #000c39;
 	width: 100%;
 	font-weight: 900;
 	padding: 0;
 	padding-top: 2px;
 	position: fixed;
 	z-index:100;
-	padding-left: 5%;
+	padding-left: 28%;
 	height: 28px;
 }
 
@@ -30,6 +29,11 @@ ol
 
 	list-style-type:none;
 	margin: 0;
+	text-shadow:
+			1px 1px 0 white,
+			1px -1px 0 white,
+			-1px 1px 0 white,
+			-1px -1px 0 white;
 
 }
 
@@ -38,8 +42,7 @@ ol>li
 	float:left;
 	letter-spacing: 1px;
 	text-align:center;
-	min-width:10%;
-	padding: 3px 4%;
+	padding: 3px 1.5%;
 }
 
 ol>li>ul
@@ -47,7 +50,7 @@ ol>li>ul
 	list-style-type: none;
 	padding: 1% 0;
 	display:none;
-	background-color: #000c39;
+	/*background-color: #000c39;*/
 	opacity: 0.85;
 	position: absolute;
 	z-index:100;
@@ -58,14 +61,13 @@ ol>li>ul
 
 ol>li>a
 {
-	color:white;
+	color: #000030;
 	text-decoration: none;
 }
 
 ol>li>a:hover
 {
 	text-decoration: underline;
-	color:#5a90e8;
 }
 
 
@@ -78,7 +80,7 @@ ol>li>ul>li
 ol>li>ul>li>a
 {
 	opacity:1;
-	color:white;
+	color: #000030;
 	text-decoration:none;
 	text-shadow:
 			1px 1px 0 black,
@@ -287,7 +289,7 @@ span
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
-	opacity: 0.7;
+	opacity: 0.95;
 }
 .return:hover
 {
