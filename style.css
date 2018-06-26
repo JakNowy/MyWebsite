@@ -9,15 +9,18 @@ body
 }
 
 /* Nawigacja*/
-
+.white
+{
+	background-color: whitesmoke;
+}
 #nav
 {
-	opacity: 0.9;
+	opacity: 0.8;
 	border-bottom: 1px gray solid;
 	width: 100%;
 	font-weight: 900;
 	padding: 0;
-	padding-top: 2px;
+	padding-top: 1px;
 	position: fixed;
 	z-index:100;
 	padding-left: 28%;
@@ -29,11 +32,6 @@ ol
 
 	list-style-type:none;
 	margin: 0;
-	text-shadow:
-			1px 1px 0 white,
-			1px -1px 0 white,
-			-1px 1px 0 white,
-			-1px -1px 0 white;
 
 }
 
@@ -245,18 +243,14 @@ span
 
 .frontend
 {
-	height: 17%;
-	width: 17%;
+	height: 13%;
+	width: 13%;
 	float:left;
-	margin: 4%;
+	margin: 6%;
     padding: 0;
     transition: transform .5s;
     background-repeat: no-repeat;
 }
-/*.frontend:first-of-type*/
-/*{*/
-	/*margin-left:6%;*/
-/*}*/
 
 .frontend:hover
 {
@@ -306,44 +300,26 @@ span
 
 	ol>li
 	{
-		padding: 3px 3%;
+		padding: 3px 1.2%;
 		letter-spacing: 0;
 	}
 	#nav
 	{
-		padding-left: 4%;
+		padding-left: 26%;
 		height: auto;
 	}
 
 }
 @media screen and (max-width: 1024px)
 {
-	#nav
-	{
-		padding-left: 2%;
-	}
-}
-
-@media screen and (max-width: 982px)
-{
-
 	ol>li
 	{
-		padding: 2px 3%;
+		padding: 3px 1%;
 		letter-spacing: 0;
 	}
-}
-
-@media screen and (max-width: 882px)
-{
-	ol>li
+	#nav
 	{
-		padding: 2px 2%;
-	}
-	#img0
-	{
-		width:40%;
-		height: 40%;
+		padding-left: 24%;
 	}
 }
 
@@ -368,7 +344,7 @@ span
 
 	#nav
 	{
-		font-size: 18px;
+		font-size: 16px;
 		padding-left: 0;
 	}
 }
@@ -398,6 +374,7 @@ span
 	}
 	.content
 	{
+		font-size: 20px;
 		padding-bottom: 40px;
 		min-height: 50px;
 	}
@@ -474,5 +451,13 @@ span
 	.contact_me
 	{
 		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 480px)
+{
+	#container0
+	{
+		height: 220px;
 	}
 }
