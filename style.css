@@ -5,6 +5,7 @@ body
 	margin: 0;
 	color:whitesmoke;
 	font-family: 'Lato', sans-serif;
+	font-size: 18px;
 }
 
 /* Nawigacja*/
@@ -15,7 +16,6 @@ body
 	border-bottom: 1px gray solid;
 	background-color: #000c39;
 	width: 100%;
-	font-size: 18px;
 	font-weight: 900;
 	padding: 0;
 	padding-top: 2px;
@@ -95,7 +95,7 @@ ol>li>ul>li>a:hover
 
 .burger-nav
 {
-	display: block;
+	display: none;
 	height: 35px;
 	width: 50px;
 	background-image: url("img/burger-nav.png");
@@ -134,8 +134,10 @@ span
 {
 	background-image: url("img/JN.JPG");
 	background-repeat: no-repeat;
-	width: 100%;
-	height:635px;
+	background-size: 100%;
+	/*background-position: center;*/
+	height:0px;
+	padding-top: 49.48%;
 	opacity: 0.9;
 	/*padding-top: 100px;*/
 	/*margin-left:auto;*/
@@ -219,13 +221,13 @@ span
 
 .content
 {
-	width: 65%;
-	min-height: 200px;
+	width: 75%;
 	background-color: whitesmoke;
 	color: black;
 	text-align: justify;
 	padding: 0;
 	padding-bottom: 50px;
+	min-height: 200px;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 24px;
@@ -233,16 +235,10 @@ span
 
 .title
 {
-	width: 65%;
-	/*background-color: whitesmoke;*/
-	color: black;
-	text-align: justify;
-	padding: 0;
-	padding-bottom: 50px;
-	padding-top: 150px;
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 48px;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 5%;
 }
 
 .frontend
@@ -352,6 +348,10 @@ span
 	/* TABLET */
 @media screen and (max-width: 768px)
 {
+	.title
+	{
+		font-size: 36px;
+	}
 	ol{
 		float:none;
 		clear:both;
@@ -376,6 +376,19 @@ span
 
 @media screen and (max-width: 480px)
 {
+	.title
+	{
+		font-size: 24px;
+	}
+	.content
+	{
+		padding-bottom: 40px;
+		min-height: 50px;
+	}
+	.burger-nav
+	{
+		display: block;
+	}
 	#img0
 	{
 		width: 80%;
@@ -415,9 +428,9 @@ span
 	{
 		position: relative;
 	}
-	#container0
+	#container0-2
 	{
-		padding-top: 0;
+		padding-top: 40px;
 	}
 	.contact_me
 	{
