@@ -373,11 +373,25 @@ span
 	}
 }
 
-	/* MOBLIES */
+	/* MOBILES */
 
 
 @media screen and (max-width: 480px)
 {
+	#container0
+	{
+		background-image: url("img/JN2.JPG");
+		height: 300px;
+	}
+
+	#container2-2
+	{
+		padding-top: 20px;
+	}
+	ol>li>a
+	{
+		color: white;
+	}
 	.title
 	{
 		font-size: 24px;
@@ -403,12 +417,7 @@ span
 	{
 		font-size: 45px;
 	}
-	.frontend
-	{
-		height: 68%;
-		width: 68%;
-		margin: 20px 16%;
-	}
+
 	ol>li
 	{
 		float: none;
@@ -425,9 +434,11 @@ span
 	ol
 	{
 		padding-left: 0;
+		text-shadow: none;
 	}
 	#nav
 	{
+		background-color: #000030;
 		position: relative;
 	}
 	#container0-2
