@@ -62,8 +62,6 @@ $('.burger-nav').on('click', function () {
     $('ol>li').toggleClass('shown')
 });
 
-var num = 200; //number of pixels before modifying styles
-
 $(window).bind('scroll', function () {
     if ($(window).scrollTop()) {
         $('#nav').addClass('white');
@@ -71,4 +69,5 @@ $(window).bind('scroll', function () {
         $('#nav').removeClass('white');
     }
 });
+
 
